@@ -1,8 +1,7 @@
-@import '../abstract/variaveis';
-
+@import "../abstract/variaveis";
 
 .clientes {
-  background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
+  background: linear-gradient(87.76deg, #0066cc 0.01%, #004891 99.48%);
   padding: 2rem 0;
 
   h3 {
@@ -24,16 +23,15 @@
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
-    color: #FAFAFA;
+    color: #fafafa;
   }
 
-  .content-wrapper .card{
+  .content-wrapper .card {
     text-align: center;
   }
 
-  .card img{
+  .img-size{
     width: 150px;
     margin: 3rem 0;
-  } 
-
+  }
 }
