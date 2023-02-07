@@ -31,7 +31,13 @@
   }
 
   .img-size {
-    width: 150px;
+    max-width: 232px;
     margin: 3rem 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .parcerias {
+    padding: 2rem 1rem;
   }
 }

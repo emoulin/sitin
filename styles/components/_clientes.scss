@@ -5,33 +5,60 @@
   padding: 2rem 0;
 
   h3 {
-    margin-bottom: 1rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1;
-    text-align: center;
-    letter-spacing: 0.385em;
 
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0.385em;
     color: $branco-light;
   }
 
   h2 {
-    text-align: center;
-    font-weight: 500;
     font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    margin-bottom: 2rem;
+    text-align: center;
     line-height: 1;
     text-align: center;
-    text-transform: uppercase;
     color: #fafafa;
   }
 
-  .content-wrapper .card {
+  .content-wrapper .card-clientes {
     text-align: center;
   }
 
-  .img-size{
-    width: 150px;
+  .img-size {
+    max-width: 232px;
     margin: 3rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .clientes {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .clientes {
+    h2 {
+      margin-bottom: 3rem;
+    }
+
+    .flex-clientes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .img-size {
+      margin: 0;
+    }
   }
 }
