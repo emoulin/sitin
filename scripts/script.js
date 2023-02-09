@@ -25,10 +25,13 @@ window.addEventListener('scroll', throttle(scrollCheck, 10));
 var swiper = new Swiper(".slide-clientes", {
   slidesPerView: 1,
   breakpoints: {
-    768: {
+    440: {
+      slidesPerView: 2,
+    },
+    550: {
       slidesPerView: 3,
     },
-    1024: {
+    768: {
       slidesPerView: 4,
     },
   },
@@ -49,10 +52,13 @@ var swiper = new Swiper(".slide-clientes", {
 var swiper = new Swiper(".slide-parcerias", {
   slidesPerView: 1,
   breakpoints: {
-    768: {
+    440: {
+      slidesPerView: 2,
+    },
+    550: {
       slidesPerView: 3,
     },
-    1024: {
+    768: {
       slidesPerView: 4,
     },
   },

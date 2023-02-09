@@ -87,6 +87,19 @@ form{
         }
     }
 }
-.iframePipefy {
+.iframePipe {
     text-align: center;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .pipeGrande {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .pipePequeno {
+        display: none;
+    }
 }
