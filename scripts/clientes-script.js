@@ -19,6 +19,6 @@ if (screenWidth >= 1024) {
     document.querySelector(".card-clientes").parentNode
   divCardClientesParent.classList.add("flex-clientes")
 } else {
-  let divLarguraSite = document.querySelector(".largura-site.swiper")
+  let divLarguraSite = document.querySelector(".largura-site")
   divLarguraSite.classList.add("swiper")
 }
