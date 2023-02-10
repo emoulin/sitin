@@ -26,14 +26,24 @@
     color: #FAFAFA;
   }
 
+  .content-wrapper{
+    padding: 3rem 0;
+  }
+
   .content-wrapper .card{
     text-align: center;
   }
 
   .card img{
-    width: 150px;
-    margin: 3rem 0;
+    max-width: 220px;
+    max-width: clamp(150px, 18vw, 220px);
   } 
+
+  @media only screen and (max-width: 768px) {
+    .card img{
+      max-width: 150px;
+    } 
+  }
 }
 
 

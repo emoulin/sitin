@@ -32,7 +32,8 @@
   }
 
   .card img{
-    width: 150px;
+    max-width: 220px;
+    max-width: clamp(150px, 18vw, 220px);
   } 
 
   .flex-clientes .content-wrapper{
@@ -41,7 +42,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     column-gap: 2rem;
-    padding: 3rem 0;
+    padding: 3rem 10px 2rem;
   }
 
   .swiper{
@@ -56,6 +57,9 @@
     .flex-clientes{
       display: none;
     }
+    .card img{
+      max-width: 150px;
+    } 
   }
 
 

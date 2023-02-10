@@ -26,7 +26,7 @@
             --x-offset: 30px;
             --y-offset: -70px;
             --scale: 2;
-            animation: floating 3s infinite alternate;
+            animation: floating 3s infinite alternate ease-in-out;
             transform-origin: top right;
             transform: 
                 translateX(30px) 

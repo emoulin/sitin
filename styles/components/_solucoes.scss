@@ -34,7 +34,8 @@
 
     article {
       padding: .5rem;
-      flex: 0 1 30ch;
+      flex: 1 1 30ch;
+      max-width: 50ch;
     }
 
     .solucoes__container__titulo-imagem {
