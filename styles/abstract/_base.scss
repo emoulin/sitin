@@ -1,8 +1,13 @@
 @import './variaveis';
 
+:root{
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
 body {
     font-family: $fonte-poppins;
-    background-color: $branco-light;
+    background-color: $branco-light;    
 }
 
 .largura-site{
@@ -14,4 +19,12 @@ body {
     max-width: 1440px;
     width: 100%;
     margin: auto;
+}
+
+img{
+    pointer-events: none;
+}
+
+img, iframe{
+    max-width: 100%;
 }

@@ -22,7 +22,7 @@ window.addEventListener('scroll', throttle(scrollCheck, 10));
 
 
 
-var swiper = new Swiper(".slide-clientes", {
+var swiper = new Swiper(".s-slide-clientes", {
   slidesPerView: 1,
   breakpoints: {
     440: {

@@ -33,7 +33,30 @@
 
   .card img{
     width: 150px;
-    margin: 3rem 0;
   } 
+
+  .flex-clientes .content-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    column-gap: 2rem;
+    padding: 3rem 0;
+  }
+
+  .swiper{
+    display: none;
+    padding: 3rem 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .swiper{
+      display: block;
+    }
+    .flex-clientes{
+      display: none;
+    }
+  }
+
 
 }

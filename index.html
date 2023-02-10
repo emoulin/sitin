@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Inicial</title>
+  <title>IN Junior - Página Inicial</title>
+  <meta name="description" content="A IN Junior é uma empresa sem fins lucrativos, visando fomentar o empreendedorismo no Brasil através de solução em tecnologia web e sistemas de alta qualidade com custo abaixo do mercado. Todo o valor ganho é revertido para a formação profissional dos nossos membros e alunos da UFF.">
   <link rel="stylesheet" href="reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
@@ -24,7 +25,7 @@
             <img class="container__item" src="./assets/Logo.svg" alt="Logo da IN JUNIOR">
         </a>
         <nav class="navegacao">
-            <a href="#pipe" class="link-orcamento">Orçamento Grátis</a>
+            <a href="#contato" class="link-orcamento">Orçamento Grátis</a>
             
             <input hidden aria-hidden type="checkbox" name="" id="menu">
             <label title="Botão do menu" for="menu" class="navegacao__botao">
@@ -173,8 +174,7 @@
       <h2>CONHEÇA ALGUNS DOS NOSSOS CLIENTES</h2>
 
       <div class="largura-site swiper">
-        <div class="slide-clientes">
-
+        <div class="s-slide-clientes">
           <div class="content-wrapper swiper-wrapper">
             <div class="card swiper-slide">
               <img class="" src="./assets/coca.png" alt="Logo da Coca-cola">
@@ -188,12 +188,38 @@
             <div class="card swiper-slide">
               <img class="" src="./assets/fiocruz.png" alt="Logo da empresa Fiocruz">
             </div>
-
+            <div class="card swiper-slide">
+              <img class="" src="./assets/fiocruz.png" alt="Logo da empresa Fiocruz">
+            </div>
+            <div class="card swiper-slide">
+              <img class="" src="./assets/fiocruz.png" alt="Logo da empresa Fiocruz">
+            </div>
           </div>
-
           <div class="swiper-pagination"></div>
-
         </div>
+      </div>
+
+      <div class="largura-site flex-clientes">
+          <div class="content-wrapper">
+            <div class="card">
+              <img class="" src="./assets/coca.png" alt="Logo da Coca-cola">
+            </div>
+            <div class="card">
+              <img class="" src="./assets/afac.png" alt="Logo da AFAC">
+            </div>
+            <div class="card">
+              <img class="" src="./assets/sabendo-mais.png" alt="Logo da empresa Sabendo Mais">
+            </div>
+            <div class="card">
+              <img class="" src="./assets/fiocruz.png" alt="Logo da empresa Fiocruz">
+            </div>
+            <div class="card">
+              <img class="" src="./assets/fiocruz.png" alt="Logo da empresa Fiocruz">
+            </div>
+            <div class="card">
+              <img class="" src="./assets/fiocruz.png" alt="Logo da empresa Fiocruz">
+            </div>
+          </div>
       </div>
 
     </section>
@@ -246,24 +272,18 @@
 
     </section>
 
-    <div class="contato__container">
-      <div class="contato__container-textos">
-          <h2 id="pipe">Peça seu orçamento</h2>
-
-          <h3>Após o formulário enviado, entraremos em contato o mais rápido possível.</h3>
-
-          <p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+    <section id="contato" class="contato">
+      <div class="largura-site contato__container">
+        <div class="contato__container-textos">
+            <h2>Peça seu orçamento</h2>
+            <h3>Após o formulário enviado, entraremos em contato o mais rápido possível.</h3>
+            <p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div>
+        <div class="iframePipe pipeGrande">
+          <iframe title="Formulário de Contato" width="560" height="780" src="https://app.pipefy.com/public/form/FXizcQ62?embedded=true" frameborder="0"></iframe>
+        </div>
       </div>
-
-      <div class="iframePipe pipeGrande">
-        <iframe width="560" height="800" src="https://app.pipefy.com/public/form/FXizcQ62?embedded=true" frameborder="0"></iframe>
-      </div>
-
-      <div  class="iframePipe pipePequeno">
-        <iframe width="320" height="800" src="https://app.pipefy.com/public/form/FXizcQ62?embedded=true" frameborder="0"></iframe>
-      </div>
-      
-  </div>
+  </section>
 
     
 

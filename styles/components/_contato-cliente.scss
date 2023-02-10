@@ -1,25 +1,25 @@
 @import '../abstract/variaveis';
 .contato__container {
-    padding: 20px;
+    padding: 1.5rem 10px;
 }
 .contato__container-textos {
-    padding: 0 1.25rem;
+    padding: 0 14px;
     padding-top: 2rem;
     h2 {
         font-size: 2rem;
-        font-weight: 500;
-        line-height: 2.25rem;
+        font-weight: 600;
+        line-height: 1;
     }
     h3 {
-        font-size: 1.5rem;
-        font-weight: 500;
-        line-height: 2rem;
-        padding: 1rem 0;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 1.5rem 0;
     }
     p {
         font-size: 1rem;
         font-weight: 400;
-        line-height: 1.5rem;
+        line-height: 1.5;
     }
 }
 form{
@@ -68,38 +68,32 @@ form{
 }
 
 @media screen and (min-width: 850px) {
-    .orcamento__container {
+    .contato__container {
         display: flex;
         flex-direction: row;
-        max-width: 1200px;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 1rem;
-        .orcamento__container-textos {
+        .contato__container-textos {
             max-width: 50%;
             h2 {
-                font-size: 3rem;
-                padding-bottom: 1rem;
+                font-size: 2rem;
+                font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
             }
             h3 {
-                font-size: 2rem;
-                padding-bottom: 4rem;
+                font-size: 1.5rem;
+                font-size: clamp(1.25rem, 1rem + 1.5vw, 1.5rem);
             }
         }
     }
 }
+
+.contato iframe{
+    height: clamp(720px, 800px - 5vw, 780px );
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px 0px rgb(0 32 146 / 25%);
+}
+
 .iframePipe {
     text-align: center;
     margin-top: 2rem;
-}
-
-@media screen and (max-width: 600px) {
-    .pipeGrande {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .pipePequeno {
-        display: none;
-    }
 }
