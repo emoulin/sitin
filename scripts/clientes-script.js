@@ -1,24 +1,20 @@
-let screenWidth = window.screen.width
+let screenWidth = window.innerWidth
+let divLarguraSite = document.querySelector(".largura-site.swiper")
+let divSlideClientes = document.querySelector(".slide-clientes")
+let divContentWrapper = document.querySelector(".content-wrapper")
+let divCardClientesParent = document.querySelector(".card-clientes").parentNode
+let divCardClientes = document.querySelectorAll(".card-clientes")
 
 if (screenWidth >= 1024) {
-  let divLarguraSite = document.querySelector(".largura-site.swiper")
   divLarguraSite.classList.remove("swiper")
 
-  let divSlideClientes = document.querySelector(".slide-clientes")
-  divSlideClientes.classList.remove("class")
+  divSlideClientes.classList.remove("slide-clientes")
 
-  let divContentWrapper = document.querySelector(".content-wrapper")
-  divContentWrapper.classList.remove("class")
+  divContentWrapper.classList.remove("content-wrapper")
 
-  let divCardClientes = document.querySelectorAll(".card-clientes")
   divCardClientes.forEach((card) => {
     card.classList.remove("swiper-slide")
   })
 
-  let divCardClientesParent =
-    document.querySelector(".card-clientes").parentNode
   divCardClientesParent.classList.add("flex-clientes")
-} else {
-  let divLarguraSite = document.querySelector(".largura-site")
-  divLarguraSite.classList.add("swiper")
 }
