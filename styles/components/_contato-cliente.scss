@@ -3,8 +3,7 @@
     padding: 1.5rem 10px;
 }
 .contato__container-textos {
-    padding: 0 14px;
-    padding-top: 2rem;
+    padding: 14px;
     h2 {
         font-size: 2rem;
         font-weight: 600;
@@ -15,13 +14,43 @@
         font-weight: 600;
         line-height: 1.2;
         margin: 1.5rem 0;
+        color: $cinza-medio;
     }
-    p {
+    a {
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
+        text-decoration: none;
+        color: $cinza-medio;
+        transition: color .3s;
+
+        &:hover{
+            color: $azul-gradiente;
+        }
     }
 }
+
+@media screen and (min-width: 850px) {
+    .contato__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        .contato__container-textos {
+            max-width: 50%;
+            h2 {
+                font-size: 2rem;
+                font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
+            }
+            h3 {
+                font-size: 1.5rem;
+                font-size: clamp(1.25rem, 1rem + 1.5vw, 1.5rem);
+            }
+        }
+    }
+}
+
 form{
     display: flex;
     justify-content: center;
@@ -67,26 +96,6 @@ form{
         }
 }
 
-@media screen and (min-width: 850px) {
-    .contato__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 1rem;
-        .contato__container-textos {
-            max-width: 50%;
-            h2 {
-                font-size: 2rem;
-                font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
-            }
-            h3 {
-                font-size: 1.5rem;
-                font-size: clamp(1.25rem, 1rem + 1.5vw, 1.5rem);
-            }
-        }
-    }
-}
-
 .contato iframe{
     height: clamp(720px, 800px - 5vw, 780px );
     border-radius: 5px;
@@ -95,5 +104,4 @@ form{
 
 .iframePipe {
     text-align: center;
-    margin-top: 2rem;
 }

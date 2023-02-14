@@ -3,7 +3,7 @@
 .cabecalho {
   background-color: $branco-light;
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
   position: sticky;
   top: 0;
@@ -38,6 +38,13 @@ header > div{
 
 @media only screen and (max-width: 480px){
   .link-orcamento {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px){
+  .lista-menu__link[href="#contato"],
+  .lista-menu__link[href="#"]{
     display: none;
   }
 }
