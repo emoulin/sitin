@@ -1,111 +1,48 @@
-@import '../abstract/variaveis';
+@import "../abstract/variaveis";
 
+// SECTION DEPOIMENTOS
 
-// CARD DEPOIMENTOS
-
-.carousel-indicators [data-bs-target] {
-  background-color: #666666 !important;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  display: none !important;
-}
-
-.container__carousel {
-  background: linear-gradient(270deg, #004891 -12.9%, #0066CC 132.24%);
-  box-shadow: 0px 4px 20px rgba(67, 136, 204, 0.3);
-  border-radius: 16px;
-  color: #FAFAFA;
-  padding: 6rem 1.25rem 4rem 1.25rem;
-  position: relative;
-
-  p {
-    padding-top: 0.7rem;
-  }
-}
-
-.container__carousel-img {
-  z-index: 1;
-  position: absolute;
-  top: -5rem;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-
-
-.card-depoimentos {
-
-  background: rgba(67, 136, 204, 0.1);
-
-  h2 {
-    text-align: center;
-    padding-top: 0.5rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #1C1C1C;
-  }
-}
-
-
-
-
-
-// AQUI É OUTRA COISA
 .depoimentos {
   background: rgba(67, 136, 204, 0.1);
-}
+  padding: 48px 24px;
 
-.depoimentos h2 {
-  font-weight: 500;
-  font-size: 2.25rem;
-  line-height: 3rem;
-  color: #1C1C1C;
-}
+  .title-depoimentos {
+    color: #1c1c1c;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 
-.depoimentos h3 {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  color: #FAFAFA;
-}
+    text-align: center;
+    margin-bottom: 48px;
+    padding-top: 0.5rem;
 
-.depoimentos p {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  color: #FAFAFA;
-}
+    line-height: 1.5rem;
+  }
 
-.depoimentos div {
-  background: #005FBF;
-  box-shadow: 0px 4px 20px rgba(67, 136, 204, 0.3);
-  border-radius: 16px;
-  width: 23.5rem;
-  height: 28.5rem;
-}
+  .pd-top80 {
+    padding-top: 80px;
+  }
 
-.container-depoimentos {
-  display: flex;
-}
+  .container__carousel {
+    background: linear-gradient(270deg, #004891 -12.9%, #0066cc 132.24%);
+    box-shadow: 0px 4px 20px rgba(67, 136, 204, 0.3);
+    border-radius: 16px;
+    color: #fafafa;
+    padding: 6rem 1.25rem 4rem 1.25rem;
+    position: relative;
+    margin-bottom: 48px;
 
-.container-depoimentos div {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  width: 380px;
-  height: 460px;
+    p {
+      padding-top: 0.7rem;
+    }
+  }
+
+  .container__carousel-img {
+    z-index: 1;
+    position: absolute;
+    top: -5rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
 }

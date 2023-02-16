@@ -1,233 +1,297 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quem Somos</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon" />
+    <!-- CSS Swiper -->
+    <link rel="stylesheet" href="./styles/swiper-bundle.css" />
+    <!-- Swiper JS -->
+    <script src="./scripts/swiper-bundle.min.js" defer></script>
+    <!-- JavaScript -->
+    <script src="./scripts/script.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <header class="cabecalho s-header">
-        <div class="largura-site-wide">
-            <img class="container__item" src="./assets/Logo.svg" alt="Logo da IN JUNIOR">
-            <nav class="navegacao">
-                <a href="/contato.html" class="link-orcamento">Orçamento Grátis</a>
-    
-                <input type="checkbox" name="" id="menu">
-                <label for="menu" class="navegacao__botao">
-                    <span class="cabecalho__menu-hamburguer"></span>
-                </label>
-                <ul class="lista-menu">
-                    <li class="lista-menu__item">
-                        <a class="lista-menu__link" href="./index.html">INÍCIO</a>
-                    </li>
-                    <li class="lista-menu__item">
-                        <a class="lista-menu__link" href="./quem-somos.html">QUEM SOMOS</a>
-                    </li>
-                    <li class="lista-menu__item">
-                        <a class="lista-menu__link" href="./contato.html">CONTATO</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="largura-site-wide">
+        <img
+          class="container__item"
+          src="./assets/Logo.svg"
+          alt="Logo da IN JUNIOR"
+        />
+        <nav class="navegacao">
+          <a href="/contato.html" class="link-orcamento">Orçamento Grátis</a>
+
+          <input type="checkbox" name="" id="menu" />
+          <label for="menu" class="navegacao__botao">
+            <span class="cabecalho__menu-hamburguer"></span>
+          </label>
+          <ul class="lista-menu">
+            <li class="lista-menu__item">
+              <a class="lista-menu__link" href="./index.html">INÍCIO</a>
+            </li>
+            <li class="lista-menu__item">
+              <a class="lista-menu__link" href="./quem-somos.html"
+                >QUEM SOMOS</a
+              >
+            </li>
+            <li class="lista-menu__item">
+              <a class="lista-menu__link" href="./contato.html">CONTATO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <section class="sobre-injunior">
+        <div class="somos-injunior">
+          <div class="elipse-somos">
+            <h2 class="elipse-somos-titulo">
+              Somos a <br />
+              IN Junior!
+            </h2>
+            <p class="elipse-somos-paragrafo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              aliquet erat turpis, eu efficitur turpis tincidunt vitae.
+            </p>
+          </div>
+        </div>
 
-        <section class="sobre-injunior">
-            <div class="somos-injunior">
-                <div class="elipse-somos">
-                    <h2 class="elipse-somos-titulo">Somos a <br> IN Junior!</h2>
-                    <p class="elipse-somos-paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                        aliquet erat turpis, eu efficitur turpis tincidunt vitae.</p>
+        <div class="container-missao-visao largura-site">
+          <div class="caixa-missao">
+            <h3>Missão</h3>
+            <p>
+              Ser uma instituição realizadora de projetos de impacto efetivo,
+              formando agentes da transformação
+            </p>
+          </div>
+
+          <div class="caixa-visao">
+            <h3>Visão</h3>
+            <p>
+              Contribuir constantemente com a formação profissional e acadêmica
+              de pessoas satisfeitas e capazes de transformar a realidade a sua
+              volta através de projetos de TI de qualidade
+            </p>
+          </div>
+        </div>
+
+        <div class="container-valores largura-site">
+          <h2 class="valores">Valores</h2>
+
+          <div class="caixas-valores">
+            <div>
+              <img
+                src="./assets/espirito de alcateiaespirto-de-alcateia.svg"
+                alt="Imagem representando espírito de alcatéia"
+              />
+              <p>Espírito de Alcateia</p>
+            </div>
+            <div>
+              <img
+                src="./assets/proalpha.svg"
+                alt="Imagem representando pro alpha tividade"
+              />
+              <p>Pro {alpha} tividade</p>
+            </div>
+            <div>
+              <img
+                src="./assets/valores-uivar com orgulho.svg"
+                alt="Imagem representando uivar com orgulho"
+              />
+              <p>Uivar com orgulho</p>
+            </div>
+            <div>
+              <img
+                src="./assets/valores-equilibrio.svg"
+                alt="Imagem representando equilíbrio"
+              />
+              <p>Equilíbrio</p>
+            </div>
+            <div>
+              <img
+                src="./assets/valores-consciente.svg"
+                alt="Imagem representando alcatéia consciente"
+              />
+              <p>Alcateia Consciente</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mej__container">
+        <h2>Conheça o Movimento Empresa Júnior</h2>
+
+        <div class="mej__container-textos">
+          <p>
+            O Movimento Empresa Júnior tem como propósito a busca por um Brasil
+            Empreendedor, formar, por meio da vivência empresarial,
+            empreendedores comprometidos e capazes de transformar o Brasil.
+          </p>
+
+          <p>
+            O movimento surgiu em 1967 na França e veio para o Brasil em 1988,
+            hoje já são mais de 600 empresas juniores e 25 federações.
+          </p>
+        </div>
+
+        <img
+          src="./assets/mej-pequeno.svg"
+          alt="Imagem do brasil mostrando os números do movimento empresa júnior"
+        />
+      </section>
+
+      <section class="depoimentos">
+        <h2 class="title-depoimentos">Depoimentos</h2>
+        <div class="largura-site swiper pd-top80">
+          <div class="slide-depoimentos">
+            <div class="content-wrapper swiper-wrapper">
+              <!-- inicio do primeiro card -->
+              <div class="swiper-slide">
+                <div class="container__carousel">
+                  <img
+                    class="container__carousel-img"
+                    src="./assets/imagemmulher.png"
+                    alt=""
+                  />
+                  <h5>"Foi umas das melhores experiências da faculdade"</h5>
+                  <p>
+                    Enquanto assessora de Projetos, eu fui PMO e gostei muito de
+                    lidar com times e projetos. Era muito bom saber do andamento
+                    de todose cada pessoa tem e a experiência em uma empresa
+                    júnior é diferente, e a IN foi uma das mais agregadores da
+                    minha faculdade.
+                  </p>
                 </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="container__carousel">
+                  <img
+                    class="container__carousel-img"
+                    src="./assets/imagemmulher.png"
+                    alt=""
+                  />
+                  <h5>"Foi umas das melhores experiências da faculdade"</h5>
+                  <p>
+                    Enquanto assessora de Projetos, eu fui PMO e gostei muito de
+                    lidar com times e projetos. Era muito bom saber do andamento
+                    de todose cada pessoa tem e a experiência em uma empresa
+                    júnior é diferente, e a IN foi uma das mais agregadores da
+                    minha faculdade.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="container__carousel">
+                  <img
+                    class="container__carousel-img"
+                    src="./assets/imagemmulher.png"
+                    alt=""
+                  />
+                  <h5>"Foi umas das melhores experiências da faculdade"</h5>
+                  <p>
+                    Enquanto assessora de Projetos, eu fui PMO e gostei muito de
+                    lidar com times e projetos. Era muito bom saber do andamento
+                    de todose cada pessoa tem e a experiência em uma empresa
+                    júnior é diferente, e a IN foi uma das mais agregadores da
+                    minha faculdade.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="container__carousel">
+                  <img
+                    class="container__carousel-img"
+                    src="./assets/imagemmulher.png"
+                    alt=""
+                  />
+                  <h5>"Foi umas das melhores experiências da faculdade"</h5>
+                  <p>
+                    Enquanto assessora de Projetos, eu fui PMO e gostei muito de
+                    lidar com times e projetos. Era muito bom saber do andamento
+                    de todose cada pessoa tem e a experiência em uma empresa
+                    júnior é diferente, e a IN foi uma das mais agregadores da
+                    minha faculdade.
+                  </p>
+                </div>
+              </div>
+              <!-- Fim do ultimo card -->
             </div>
 
-            <div class="container-missao-visao largura-site">
-                <div class="caixa-missao">
-                    <h3>Missão</h3>
-                    <p>Ser uma instituição realizadora de projetos de impacto efetivo, formando agentes da transformação
-                    </p>
-                </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
 
-                <div class="caixa-visao">
-                    <h3>Visão</h3>
-                    <p>Contribuir constantemente com a formação profissional e acadêmica de pessoas satisfeitas e
-                        capazes de transformar a realidade a sua volta através de projetos de TI de qualidade</p>
-                </div>
-            </div>
+      <section class="participacao-eventos">
+        <h2>Participação em eventos</h2>
 
-            <div class="container-valores largura-site">
-                <h2 class="valores">Valores</h2>
+        <img class="img-efej" src="./assets/efej.png" alt="" />
+      </section>
 
-                <div class="caixas-valores">
-                    <div>
-                        <img src="./assets/espirito de alcateiaespirto-de-alcateia.svg"
-                            alt="Imagem representando espírito de alcatéia">
-                        <p>Espírito de Alcateia</p>
-                    </div>
-                    <div>
-                        <img src="./assets/proalpha.svg" alt="Imagem representando pro alpha tividade">
-                        <p>Pro
-                            {alpha}
-                            tividade</p>
-                    </div>
-                    <div>
-                        <img src="./assets/valores-uivar com orgulho.svg" alt="Imagem representando uivar com orgulho">
-                        <p>Uivar com orgulho</p>
-                    </div>
-                    <div>
-                        <img src="./assets/valores-equilibrio.svg" alt="Imagem representando equilíbrio">
-                        <p>Equilíbrio</p>
-                    </div>
-                    <div>
-                        <img src="./assets/valores-consciente.svg" alt="Imagem representando alcatéia consciente">
-                        <p>Alcateia Consciente</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="mej__container">
-
-            <h2>Conheça o Movimento Empresa Júnior</h2>
-
-            <div class="mej__container-textos">
-
-                <p>O Movimento Empresa Júnior tem como propósito a busca por um Brasil Empreendedor, formar, por meio da
-                    vivência empresarial, empreendedores comprometidos e capazes de transformar o Brasil.</p>
-
-                <p>O movimento surgiu em 1967 na França e veio para o Brasil em 1988, hoje já são mais de 600 empresas
-                    juniores e 25 federações.</p>
-
-            </div>
-
-            <img src="./assets/mej-pequeno.svg" alt="Imagem do brasil mostrando os números do movimento empresa júnior">
-
-        </section>
-
-        <section class="card-depoimentos">
-
-            <!-- <h3>A QUEM ATENDEMOS?</h3> -->
-
-            <h2>Depoimentos</h2>
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active p-5 mt-5">
-                        <div class="container__carousel">
-                            <img class="container__carousel-img" src="./assets/imagemmulher.png" alt="">
-                            <h5>"Foi umas das melhores experiências da faculdade"</h5>
-                            <p>Enquanto assessora de Projetos, eu fui PMO e gostei muito de lidar com times e projetos.
-                                Era muito bom saber do andamento de todose cada pessoa tem e a experiência em uma
-                                empresa júnior é diferente, e a IN foi uma das mais agregadores da minha faculdade.</p>
-                        </div>
-                        <!-- <img src="./assets/coca-cola.svg" class="d-block w-80 container-fluid" alt="..."> -->
-                    </div>
-                    <div class="carousel-item p-5 mt-5">
-                        <div class="container__carousel">
-                            <img class="container__carousel-img" src="./assets/imagemmulher.png" alt="">
-                            <h5>"Foi umas das melhores experiências da faculdade"</h5>
-                            <p>Enquanto assessora de Projetos, eu fui PMO e gostei muito de lidar com times e projetos.
-                                Era muito bom saber do andamento de todose cada pessoa tem e a experiência em uma
-                                empresa júnior é diferente, e a IN foi uma das mais agregadores da minha faculdade.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item p-5 mt-5">
-                        <div class="container__carousel">
-                            <img class="container__carousel-img" src="./assets/imagemmulher.png" alt="">
-                            <h5>"Foi umas das melhores experiências da faculdade"</h5>
-                            <p>Enquanto assessora de Projetos, eu fui PMO e gostei muito de lidar com times e projetos.
-                                Era muito bom saber do andamento de todose cada pessoa tem e a experiência em uma
-                                empresa júnior é diferente, e a IN foi uma das mais agregadores da minha faculdade.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item p-5 mt-5">
-                        <div class="container__carousel">
-                            <img class="container__carousel-img" src="./assets/imagemmulher.png" alt="">
-                            <h5>"Foi umas das melhores experiências da faculdade"</h5>
-                            <p>Enquanto assessora de Projetos, eu fui PMO e gostei muito de lidar com times e projetos.
-                                Era muito bom saber do andamento de todose cada pessoa tem e a experiência em uma
-                                empresa júnior é diferente, e a IN foi uma das mais agregadores da minha faculdade.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-        </section>
-
-        <section class="participacao-eventos">
-
-            <h2>Participação em eventos</h2>
-
-            <img class="img-efej" src="./assets/efej.png" alt="">
-
-
-        </section>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
     </main>
 
     <footer>
-        <div class="footer__container largura-site-wide">
-            <div class="footer__container-imagem-textos">
-                <div class="footer__container-informacao">
-                    <h3 class="footer__titulo">Vamos conversar!</h3>
-                    <!-- TROCAR PARA MAIL TO -->
-                    <p class="footer__contato">contato@injunior.com.br</p>
-                </div>
-                <img class="footer__logo" src="./assets/logo-in-pequena.svg" alt="Logo da IN Junior">
-            </div>
-
-            <div class="footer__social">
-                <a href="#"><img src="./assets/instagram.svg" alt="Logo do instagram"></a>
-                <a href="#"><img src="./assets/facebook.svg" alt="Logo do facebook"></a>
-                <a href="#"><img src="./assets/linkedin.svg" alt="Logo do linkedin"></a>
-            </div>
-            <p class="footer__disclaimer">A IN Junior é uma empresa Júnior, regulamentada pela lei <a
-                    href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13267.htm">13.267/2016</a>; E por
-                essa razão, sem fins lucrativos. Com intuito de fomentar o crescimento do empreendedorismo no Brasil,
-                queremos cada vez mais impactar a sociedade oferecendo serviços de desenvolvimento de software com
-                preços acessíveis e de qualidade, aplicando toda renda adquirida na formação profissional e pessoal de
-                nossos membros e alunos do Instituto de Computação - UFF.</p>
-            <p class="footer__copyright">© Copyright 2022. IN Junior. Todos os direitos reservados. Niterói, Brasil.</p>
+      <div class="footer__container largura-site-wide">
+        <div class="footer__container-imagem-textos">
+          <div class="footer__container-informacao">
+            <h3 class="footer__titulo">Vamos conversar!</h3>
+            <!-- TROCAR PARA MAIL TO -->
+            <p class="footer__contato">contato@injunior.com.br</p>
+          </div>
+          <img
+            class="footer__logo"
+            src="./assets/logo-in-pequena.svg"
+            alt="Logo da IN Junior"
+          />
         </div>
 
+        <div class="footer__social">
+          <a href="#"
+            ><img src="./assets/instagram.svg" alt="Logo do instagram"
+          /></a>
+          <a href="#"
+            ><img src="./assets/facebook.svg" alt="Logo do facebook"
+          /></a>
+          <a href="#"
+            ><img src="./assets/linkedin.svg" alt="Logo do linkedin"
+          /></a>
+        </div>
+        <p class="footer__disclaimer">
+          A IN Junior é uma empresa Júnior, regulamentada pela lei
+          <a
+            href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13267.htm"
+            >13.267/2016</a
+          >; E por essa razão, sem fins lucrativos. Com intuito de fomentar o
+          crescimento do empreendedorismo no Brasil, queremos cada vez mais
+          impactar a sociedade oferecendo serviços de desenvolvimento de
+          software com preços acessíveis e de qualidade, aplicando toda renda
+          adquirida na formação profissional e pessoal de nossos membros e
+          alunos do Instituto de Computação - UFF.
+        </p>
+        <p class="footer__copyright">
+          © Copyright 2022. IN Junior. Todos os direitos reservados. Niterói,
+          Brasil.
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
