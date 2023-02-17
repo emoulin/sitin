@@ -2,7 +2,7 @@
 
 
 .resultado{
-    background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);;
+    background: $linear-gradiente;
     width: 100%;
 
     &> div{
@@ -77,7 +77,7 @@
             font-size: 1.5rem;
             font-size: clamp(1.2rem, 1rem + 1vw, 1.5rem);
             line-height: 1.5;
-            color: #FAFAFA;
+            color: $secondary-font-color;
         }
     }
 
@@ -97,14 +97,14 @@
         .numero {
             font-size: 2.5rem;
             font-weight: 500;
-            color: $branco-light;
+            color: $secondary-font-color;
         }
 
         .resultado__numero__textos {
             font-size: 1rem;
             line-height: 1.5;
             font-weight: 400;
-            color: $branco-light;
+            color: $secondary-font-color;
             text-align: center;
             max-width: 140px;
         }

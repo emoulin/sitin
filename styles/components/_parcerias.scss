@@ -1,7 +1,7 @@
 @import '../abstract/variaveis';
 
 .parcerias {
-  background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
+  background: $linear-gradiente;
   padding: 2rem 0;
 
   h3 {
@@ -11,7 +11,7 @@
     line-height: 1;
     text-align: center;
     letter-spacing: 0.385em;
-    color: $branco-light;
+    color: $secondary-font-color;
     margin-bottom: 1rem;
   }
 

@@ -4,7 +4,8 @@
 
 /* Footer */
 footer{
-    background: linear-gradient(90deg, #FFFFFF 0, #F0F0F0 100%);
+    background: $primary-background-color;
+    transition: background-color .3s;
 }
 .footer__container {
     padding: 2.5rem 1rem 1rem;
@@ -22,12 +23,13 @@ footer{
             font-size: 1.25rem;
             font-size: clamp(1.25rem, .8rem + 2vw, 2rem);
             text-transform: uppercase;
+            color: $primary-font-color;
         }
         
         .footer__contato {
             margin-top: .5rem;
             font-size: 1rem;
-            color: #0066CC;
+            color: $azul-gradiente;
         }
     }
 
@@ -51,7 +53,7 @@ footer{
             font-weight: 600;
         }
         a:hover{
-            color: #0066CC;
+            color: $azul-gradiente;
         }
         @media screen and (max-width: 600px) {
             display: none;
@@ -60,7 +62,7 @@ footer{
 
     .footer__copyright {
         font-size: .8rem;
-        color: #5A5A5A;
+        color: $cinza-medio;
         text-align: center;
         // padding-bottom: 2.5rem;
         margin-top: 1rem;

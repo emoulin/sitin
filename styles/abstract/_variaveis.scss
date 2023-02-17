@@ -1,10 +1,54 @@
 // FONTE 
 $fonte-poppins: 'Poppins', sans-serif;
 
-// CORES 
-$azul-gradiente: #0066CC;
-$fonte-preta: #1C1C1C;
-$cinza-medio: #666;
-$linear-gradiente: linear-gradient(89.13deg, #0066CC 1.18%, #004891 101.08%);
-$branco: #FFFFFF;
-$branco-light: #FAFAFA;
+//#region       Light Mode
+    // CORES 
+    $l-azul-gradiente: hsl(210, 100%, 40%);
+    //FONT-COLOR
+    $l-primary-font-color: #333;
+    $l-secondary-font-color: #fafafa;
+    //BG-COLOR
+    $l-primary-background-color: #eee;
+    $l-primary-background-color-lighter: #fafafa;
+    //BOX-SHADOW
+    $l-primary-box-shadow: 5px 5px 0px 0px #00209240;
+    $l-secondary-box-shadow: 0px 5px 2px #00209240;
+
+    $l-cinza-medio: #666;
+    $l-linear-gradiente: linear-gradient(90deg, hsl(210, 100%, 40%) 0%, hsl(210, 100%, 30%) 100%);
+//#endregion    Light Mode
+
+//#region       Dark Mode
+    // CORES 
+    $d-azul-gradiente: hsl(210, 100%, 40%);
+    //FONT-COLOR
+    $d-primary-font-color: #eee;
+    $d-secondary-font-color: #eee;
+    //BG-COLOR
+    $d-primary-background-color: #112;
+    $d-primary-background-color-lighter: #223;
+    //BOX-SHADOW
+    $d-primary-box-shadow: 5px 5px 0px 0px #000e;
+    $d-secondary-box-shadow: 0px 5px 2px #000e;
+
+    $d-cinza-medio: #888;
+    $d-linear-gradiente: linear-gradient(90deg, hsl(210, 100%, 25%) 0%, hsl(210, 100%, 15%) 100%);
+//#endregion        Dark Mode
+
+//#region       Scss to CSS
+
+    // CORES 
+    $azul-gradiente: var(--azul-gradiente, #0066cc);
+    //FONT-COLOR
+    $primary-font-color: var(--primary-font-color);
+    $secondary-font-color: var(--secondary-font-color);
+    //BG-COLOR
+    $primary-background-color: var(--primary-background-color);
+    $primary-background-color-lighter: var(--primary-background-color-lighter);
+    //BOX-SHADOW
+    $primary-box-shadow: var(--primary-box-shadow);
+    $secondary-box-shadow: var(--secondary-box-shadow);
+
+    $cinza-medio: var(--cinza-medio);
+    $linear-gradiente: var(--linear-gradiente);
+//#endregion        Scss to CSS

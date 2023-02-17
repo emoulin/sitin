@@ -68,7 +68,7 @@
             font-weight: 600;
             font-size: 36px;
             line-height: 2rem;
-            color: #FAFAFA;
+            color: $primary-font-color;
         }
 
         .elipse-somos-paragrafo {
@@ -78,7 +78,7 @@
             display: flex;
             align-items: center;
             text-align: center;
-            color: #FAFAFA;
+            color: $primary-font-color;
             max-width: 90%;
         }
 
@@ -95,7 +95,7 @@
         h3 {
             font-weight: 600;
             font-size: 2rem;
-            color: #1C1C1C;
+            color: $secondary-font-color;
             text-align: center;
             position: relative;
             top: -1rem;
@@ -105,13 +105,13 @@
             font-weight: 400;
             font-size: 1rem;
             line-height: 1.5rem;
-            color: #666666;
+            color: $cinza-medio;
             text-align: left;
             padding-bottom: 1rem;
         }
 
         .caixa-missao, .caixa-visao {
-            background: #FAFAFA;
+            background: $primary-background-color;
             box-shadow: 5px 5px 0px rgba(0, 32, 146, 0.25);
             border-radius: 16px;
             padding: 0 1.25rem;
@@ -130,7 +130,7 @@
       font-weight: 600;
       font-size: 2.25rem;
       line-height: 3rem;
-      color: #1C1C1C;
+      color: $primary-font-color;
       padding-bottom: 1.5rem;
     }
     
@@ -143,8 +143,8 @@
       div {
         display: flex;
         text-align: center;
-        background: #FAFAFA;
-        box-shadow: 5px 5px 0px rgb(0 32 146 / 25%);
+        background: $primary-background-color;
+        box-shadow: $primary-box-shadow;
         border-radius: 1rem;
         width: 9rem;
         height: 13rem;

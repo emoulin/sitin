@@ -1,0 +1,50 @@
+@use './variaveis';
+
+@mixin light{
+    --azul-gradiente: #{$l-azul-gradiente};
+    //FONT-COLOR
+    --primary-font-color: #{$l-primary-font-color};
+    --secondary-font-color: #{$l-secondary-font-color};
+    //BG-COLOR
+    --primary-background-color: #{$l-primary-background-color};
+    --primary-background-color-lighter: #{$l-primary-background-color-lighter};
+    //BOX-SHADOW
+    --primary-box-shadow: #{$l-primary-box-shadow};
+    --secondary-box-shadow: #{$l-secondary-box-shadow};
+
+    --cinza-medio: #{$l-cinza-medio};
+    --linear-gradiente: #{$l-linear-gradiente};
+}
+
+@mixin dark{
+    --azul-gradiente: #{$d-azul-gradiente};
+    //FONT-COLOR
+    --primary-font-color: #{$d-primary-font-color};
+    --secondary-font-color: #{$d-secondary-font-color};
+    //BG-COLOR
+    --primary-background-color: #{$d-primary-background-color};
+    --primary-background-color-lighter: #{$d-primary-background-color-lighter};
+    //BOX-SHADOW
+    --primary-box-shadow: #{$d-primary-box-shadow};
+    --secondary-box-shadow: #{$d-secondary-box-shadow};
+
+    --cinza-medio: #{$d-cinza-medio};
+    --linear-gradiente: #{$d-linear-gradiente};
+}
+
+:root{
+    @include light;
+    
+    @media only screen and (prefers-color-scheme: dark) {
+        @include dark;
+    }
+}
+
+body{
+    &.light{
+        @include light;
+    }
+    &.dark{
+        @include dark;
+    }
+}

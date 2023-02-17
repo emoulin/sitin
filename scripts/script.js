@@ -22,6 +22,39 @@ window.addEventListener('scroll', throttle(scrollCheck, 10));
 
 
 
+let darkMode = localStorage.getItem('darkMode'); 
+const darkModeToggle = document.querySelector('.s-theme-button');
+
+const enableDarkMode = () => {
+  document.body.classList = 'dark';
+  darkModeToggle.classList.add('dark');
+  localStorage.setItem('darkMode', 'enabled');
+}
+
+const disableDarkMode = () => {
+  document.body.classList = 'light';
+  darkModeToggle.classList.remove('dark');
+  localStorage.setItem('darkMode', 'disabled');
+} 
+
+if (!darkMode && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  enableDarkMode();
+}
+if (darkMode === 'enabled') {
+  enableDarkMode();
+}
+if (darkMode === 'disabled') {
+  disableDarkMode();
+}
+darkModeToggle.addEventListener('click', () => {
+  darkMode = localStorage.getItem('darkMode'); 
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+  } else {  
+    disableDarkMode(); 
+  }
+});
+
 var swiper = new Swiper(".slide-clientes", {
   slidesPerView: 1,
   breakpoints: {
